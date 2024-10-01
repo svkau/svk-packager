@@ -1,0 +1,26 @@
+[project]
+name = "svk-packager"
+version = "0.1"
+description = "A tool för for packaging delivery to e-archives"
+readme = "README.md"
+authors = [{name = "Svenska kyrkans arkiv i Uppsala"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/svkau/svk-packager"
+Changelog = "https://github.com/svkau/svk-packager/releases"
+Issues = "https://github.com/svkau/svk-packager/issues"
+CI = "https://github.com/svkau/svk-packager/actions"
+
+[project.scripts]
+svk-packager = "svk_packager.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
